@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "text-diff",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "lerna run start",
+    "start:client": "yarn workspace @text-diff/app start",
+    "start:server": "yarn workspace @text-diff/server start",
+    "test": "lerna run test"
+  },
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  }
+}
