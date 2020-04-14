@@ -1,13 +1,13 @@
 {
   "private": true,
-  "name": "text-diff",
+  "name": "text-diff-app",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "start": "lerna run start",
-    "start:client": "yarn workspace @text-diff/app start",
-    "start:server": "yarn workspace @text-diff/server start",
+    "start": "lerna run start --scope={@diff/app,@diff/server}",
+    "start:client": "lerna run start --scope=@diff/app",
+    "start:server": "lerna run start --scope=@diff/server",
     "test": "lerna run test"
   },
   "devDependencies": {

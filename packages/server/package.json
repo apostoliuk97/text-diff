@@ -1,5 +1,5 @@
 {
-  "name": "@diff-text/server",
+  "name": "@diff/server",
   "version": "0.0.0",
   "private": true,
   "scripts": {

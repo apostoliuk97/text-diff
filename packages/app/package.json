@@ -1,5 +1,5 @@
 {
-  "name": "@diff-text/app",
+  "name": "@diff/app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
