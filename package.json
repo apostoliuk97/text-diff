@@ -5,12 +5,18 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "lerna run start --scope={@diff/app,@diff/server}",
+    "start": "lerna run start --scope={@diff/app,@diff/server,@diff/lib}",
     "start:client": "lerna run start --scope=@diff/app",
+    "start:lib": "lerna run start --scope=@diff/lib",
     "start:server": "lerna run start --scope=@diff/server",
+    "build:lib": "lerna run build --scope=@diff/lib",
     "test": "lerna run test"
   },
   "devDependencies": {
     "lerna": "^3.20.2"
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "^18.1.0",
+    "typescript": "^3.8.3"
   }
 }
