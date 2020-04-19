@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./packages",
+    "paths": {
+      "@diff/lib": ["./lib/dist"],
+      "@diff/websocket": ["./websocket"],
+      "*": ["src/*"]
+    }
+  }
+}

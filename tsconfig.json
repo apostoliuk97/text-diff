@@ -1,11 +1,5 @@
 {
-  "extends": "./tsconfig.build.json",
+  "extends": "./tsconfig.paths.json",
   "include": ["src"],
   "exclude": ["node_modules"],
-  "compilerOptions": {
-    "baseUrl": "./packages",
-    "paths": {
-      "@diff/lib": ["./lib/src"],
-    }
-  }
 }
