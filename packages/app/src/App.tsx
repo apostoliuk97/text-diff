@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Component } from 'react';
 import io from 'socket.io-client';
-import diff from '@diff/lib';
 
 
 import './App.css';
+import { render } from '@testing-library/react';
+import { Tets } from './Test';
 
-
-console.log('diff', diff);
 
 const socket = io('http://localhost:3001', { transports: ['websocket'] });
 
@@ -38,6 +37,7 @@ function App() {
           socket.emit('change_text', event.target.value);
         }}
       />
+      <Tets />
     </div>
   );
 }
